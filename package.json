@@ -2,6 +2,7 @@
   "name": "flood-js",
   "version": "1.0.0",
   "main": "dist/index.js",
+  "type": "module",
   "scripts": {
     "clean": "rm -rf dist/*",
     "build": "npm run clean && tsc",
@@ -10,5 +11,10 @@
   },
   "author": "",
   "license": "MIT",
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.3",
+    "socks-proxy-agent": "^8.0.4",
+    "telnet-client": "^2.2.1"
+  }
 }
