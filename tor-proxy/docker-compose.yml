@@ -1,0 +1,9 @@
+services:
+  tor-proxy:
+    build: .
+    container_name: tor-proxy
+    ports:
+      - "9050:9050"
+    volumes:
+      - ./torrc:/etc/tor/torrc
+    restart: unless-stopped
